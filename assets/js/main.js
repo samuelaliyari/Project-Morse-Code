@@ -44,13 +44,10 @@ const output = document.body.querySelector("p");
 
 button.addEventListener("click", () => {
     let input = text.value.toUpperCase();
-    console.log(input)
     let code = ""
     
     for (let i = 0; i < input.length; i++ ) {
         for (element of morseAlphabet) {
-            console.log(input.charAt(i))
-            console.log(element.letter)
             if (element.letter === input.charAt(i)) {
                 code += element.morseCode
             }
